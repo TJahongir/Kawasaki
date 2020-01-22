@@ -1,0 +1,255 @@
+$primary-color: #64d130;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+h1 {
+  color: $primary-color;
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+p {
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+
+a {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: $primary-color;
+  font-size: 1.8rem;
+}
+
+.wrapper {
+  nav {
+    padding: 0 140px;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+
+    .logo {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    ul {
+      display: flex;
+
+      li {
+        list-style: none;
+        padding: 0 20px;
+        text-transform: uppercase;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .nav-bottom {
+    z-index: 999;
+    padding: 0 140px;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+
+      li {
+        list-style: none;
+        padding: 0 20px;
+        text-transform: uppercase;
+        opacity: 0.3;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 1.5rem;
+          text-transform: none;
+        }
+      }
+    }
+
+    .left-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 96px;
+      cursor: pointer;
+
+      .left,
+      .right {
+        background: $primary-color;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          font-size: 1.6rem;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .page {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    padding: 60px 140px;
+  }
+
+  .page.one {
+    background: linear-gradient(to right, #303637, #000000);
+    display: flex;
+    align-items: center;
+
+    .motoFront {
+      flex: 2;
+
+      .img {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .text {
+      flex: 1;
+    }
+  }
+
+  .page.two {
+    background: linear-gradient(to right, #303637, #000000);
+    position: relative;
+
+    .text-2 {
+      margin-top: 6rem;
+      z-index: 9999;
+      width: 40%;
+
+      p {
+        margin: 20px 0;
+      }
+
+      ul {
+        padding-left: 20px;
+        width: 80%;
+
+        li {
+          padding-bottom: 20px;
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .motoUp {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      .img {
+        max-height: 600px;
+        max-width: 800px;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .page.three {
+    background: #000;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    .nav-bottom {
+      li {
+        padding: 0 15px;
+        a {
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    .motoIn {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      z-index: 0;
+
+      img {
+        width: 80%;
+        z-index: 0;
+      }
+    }
+
+    .text-3 {
+      margin-top: 4rem;
+      z-index: 9999999;
+      p {
+        margin: 1rem 0 38rem;
+      }
+    }
+  }
+}
+
+footer {
+  border-top: 2px dashed #000;
+  background: #000;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    margin: 0;
+  }
+}
