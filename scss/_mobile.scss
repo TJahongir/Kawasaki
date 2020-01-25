@@ -1,6 +1,76 @@
-@media only screen and (max-width: 600px) {
-  .nav-bottom {
-    opacity: 0;
-    pointer-events: none;
+@media only screen and (max-width: 950px) {
+  .wrapper {
+    padding: 0;
+
+    .nav-bottom {
+      display: none;
+    }
+    nav {
+      padding: 0 1rem;
+      justify-content: center;
+      position: absolute;
+
+      .logo {
+        font-size: 3.5rem;
+      }
+
+      ul {
+        display: none;
+      }
+    }
+
+    .page {
+      padding: 0 1rem;
+      width: auto;
+      height: auto;
+      min-height: 100vh;
+    }
+
+    .page.one {
+      padding-top: 10rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: center;
+
+      .motoFront {
+        order: 2;
+      }
+
+      .text {
+        order: 1;
+      }
+    }
+
+    .page.two {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .text-2 {
+        width: 100%;
+        margin-top: 0px;
+        text-align: center;
+
+        ul {
+          text-align: left;
+        }
+      }
+
+      .motoUp {
+        position: relative;
+        transform: rotate(90deg);
+        margin-top: 10rem;
+      }
+    }
+
+    .page.three {
+      .text-3 {
+        p {
+          margin: 1rem 0 3rem;
+        }
+      }
+    }
   }
 }
